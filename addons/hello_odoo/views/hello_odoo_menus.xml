@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ============================================================
+         MENU RACINE (barre supérieure)
+         ============================================================ -->
+    <menuitem id="menu_hello_root"
+              name="Hello Odoo"
+              web_icon="hello_odoo,static/description/icon.png"
+              sequence="10"/>
+
+    <!-- ============================================================
+         SOUS-MENU : pointe vers l'action définie dans les vues.
+         parent = le menu racine (par son external ID).
+         ============================================================ -->
+    <menuitem id="menu_hello_records"
+              name="Hello Records"
+              parent="menu_hello_root"
+              action="action_hello_record"
+              sequence="10"/>
+
+</odoo>
